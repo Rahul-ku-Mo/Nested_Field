@@ -21,7 +21,7 @@ const InputField: React.FC<InputFieldProps> = ({
       {focused ? (
         <input
           placeholder="AddName...."
-          className="p-1 min-w-[80px] rounded-md bg-white"
+          className="p-1 w-[100px] rounded-md bg-white"
           value={value}
           onKeyDown={(e) => {
             if (e.code === "Enter") {
@@ -34,8 +34,8 @@ const InputField: React.FC<InputFieldProps> = ({
           }}
         />
       ) : (
-        <div className="p-1 min-w-[80px] rounded-md" onClick={setFocusOpen}>
-          {value || "Enter..."}
+        <div className="p-1 w-[100px] rounded-md" onClick={setFocusOpen}>
+          {value || "AddName..."}
         </div>
       )}
     </>
